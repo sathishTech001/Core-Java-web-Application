@@ -14,7 +14,7 @@ public class ServiceImpl {
 	    ArrayList<Student> allData = dao.viewAll();
 	    if (allData.isEmpty()) {
 	        System.out.println("No students found!");
-	        throw new StudentProjectException("not data exsist!");
+	        return new ArrayList<>();
 	    }else{
 	    	return allData;
 	    }
