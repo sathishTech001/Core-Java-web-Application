@@ -1,0 +1,16 @@
+
+
+
+
+create database masterdb;
+
+CREATE TABLE masterdb.student_details (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    name VARCHAR(100) NOT NULL,
+    age INT NOT NULL,
+    gender VARCHAR(10),
+    year VARCHAR(20),
+    department VARCHAR(100),
+    isActive BOOLEAN DEFAULT TRUE
+);
+
